@@ -45,7 +45,8 @@ Ici tu te trouves dans la racine de notre programme. Pour trouver te montrer que
 -Likes.all #commande permettant de constater la presence d'un taleau des likes.
 
 S'il te reste du courage (et je n'en doute pas !). tu peux aller sur notre repetoire model, db ainsi que migrate  pour comprendre comment sont relies nos differentes tables. 
-Si tu n'en as pas le courage laisse moi imager ce que l'on a fait !
+
+Dans le cas contraire laisse moi imager ce que l'on a fait !
 
 
 
