@@ -9,6 +9,9 @@ require 'faker'
 User.destroy_all
 Article.destroy_all
 Category.destroy_all
+Comment.destroy_all
+Like.destroy_all
+
 5.times do
   category = Category.create!(name: Faker::ProgrammingLanguage.name)
 end
@@ -17,7 +20,12 @@ end
 end
 
 10.times do
-  # @random = Random.new
-  # @random = @random.rand(10)
-  article = Article.create!(title: Faker::Pokemon.name, content: Faker::ChuckNorris.fact, user_id: User.first.id, category_id: Category.last.id)
+  article = Article.create!(title: Faker::Pokemon.name, content: Faker::ChuckNorris.fact, user_id: User.order("RANDOM()").first.id, category_id: Category.first.id)
+end
+
+15.times do
+  comment = Comment.create!(content: Faker::Lebowski.quote, user_id: User.order("RANDOM()").first.id, article_id: Article.order("RANDOM()").first.id)
+end
+15.times do
+  like = Like.create!(user_id: User.order("RANDOM()").first.id, article_id: Article.order("RANDOM()").first.id)
 end
