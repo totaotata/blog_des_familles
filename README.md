@@ -76,8 +76,13 @@ Dans le cas contraire laisse moi imager ce que l'on a fait !
 
 
 Projet ecrit par :
+
 -AUDREN Marion 
+
 -LE VOT Thomas
+
 -POUZOL Maxime
+
 -Ibrahimi Nassim
+
 -De Carvalho Enzo 
